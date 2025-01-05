@@ -1,75 +1,52 @@
-# Nuxt Minimal Starter
+# FiveM Carcols & Modkit ID Resolver
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A web-based tool designed to resolve ID conflicts in carcols.meta and carvariations.meta files for FiveM vehicle modifications.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- **Carcols Resolver**
+  - Upload and process carcols.meta files
+  - Upload and process carvariations.meta files
+  - Resolve conflicts for all vehicles or single vehicle
+  - Automatic ID conflict detection and resolution
 
-```bash
-# npm
-npm install
+- **Modkit Resolver**
+  - Handle modkit ID conflicts
+  - Process multiple vehicle configurations
+  - Support for both batch and single vehicle processing
+  - Automated conflict resolution
 
-# pnpm
-pnpm install
+## Getting Started
 
-# yarn
-yarn install
+### Prerequisites
 
-# bun
-bun install
-```
+- Node.js (version X.X.X or higher)
+- Vue.js 3
+- Nuxt UI
 
-## Development Server
+### Installation
 
-Start the development server on `http://localhost:3000`:
+1. Clone the repository 
+2. Install dependencies
 
-```bash
-# npm
-npm run dev
+## Usage
+1. Select either "Carcols Resolver" or "Modkit Resolver" from the navigation menu
 
-# pnpm
-pnpm dev
+2. Upload your carcols.meta file
+  
+3. Upload your carvariations.meta file
+  
+4. Select the vehicle scope (All vehicles or Single vehicle)
+  
+5. Click the respective resolve button
+  
+6. Download the processed files
 
-# yarn
-yarn dev
+## Technical Details
+- Built with Vue 3 Composition API
 
-# bun
-bun run dev
-```
+- Utilizes Nuxt UI components
 
-## Production
+- Tailwind CSS for styling
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- File processing handled client-side for security
